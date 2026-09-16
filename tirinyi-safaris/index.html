@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tirinyi Safaris | Uganda tours and travel</title>
+<meta name="description" content="Private guided safaris across Uganda: gorilla trekking in Bwindi, Queen Elizabeth, Murchison Falls, Lake Mburo, Lake Bunyonyi and Kidepo.">
+<link rel="icon" type="image/png" href="logo/tirinyi-safaris-icon.png">
+<link rel="apple-touch-icon" href="logo/tirinyi-safaris-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Gloock&display=swap" rel="stylesheet">
+<style>
+:root{
+  --montane:#173A2E; --canopy:#2F5D46; --gold:#E6AE2F; --nile:#1F5462;
+  --bg:#F5F6EF; --surface:#FFFFFF; --surface-2:#E8EBDD; --text:#15211B; --muted:#4D5A51; --line:#D3D8C7;
+  --link:#2F5D46; --focus:#1F5462; --map-land:#E3E8D6; --map-water:#9CC3C9; --pin:#173A2E;
+  --serif:"Gloock", Georgia, "Times New Roman", serif;
+  --sans:"Figtree", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0E1813; --surface:#15231C; --surface-2:#1B2C24; --text:#E8ECE3; --muted:#A5B2A8; --line:#2B3D34;
+    --link:#E6AE2F; --focus:#E6AE2F; --map-land:#1F3329; --map-water:#2B5C6B; --pin:#E6AE2F; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0E1813; --surface:#15231C; --surface-2:#1B2C24; --text:#E8ECE3; --muted:#A5B2A8; --line:#2B3D34;
+  --link:#E6AE2F; --focus:#E6AE2F; --map-land:#1F3329; --map-water:#2B5C6B; --pin:#E6AE2F; color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto} *{transition:none!important}}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);font-size:1.0625rem;line-height:1.6;-webkit-font-smoothing:antialiased}
+img,svg{max-width:100%;display:block}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.08;margin:0;letter-spacing:-.005em}
+h2{font-size:clamp(2rem,3.8vw,3.1rem)}
+p{margin:0 0 1rem}
+a{color:var(--link)}
+.wrap{width:min(1180px,100% - 2.5rem);margin-inline:auto}
+section{scroll-margin-top:80px}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:4px}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.85rem 1.35rem;border-radius:999px;font:600 1rem var(--sans);text-decoration:none;border:1.5px solid transparent;cursor:pointer;transition:background .2s,border-color .2s}
+.btn-gold{background:var(--gold);color:#1A1A12}
+.btn-gold:hover{background:#F2C255}
+.btn-ghost{border-color:rgba(255,255,255,.55);color:#fff;background:transparent}
+.btn-ghost:hover{background:rgba(255,255,255,.12)}
+.btn-line{border-color:var(--line);color:var(--text);background:var(--surface)}
+.btn-line:hover{border-color:var(--text)}
+.text-link{background:none;border:0;padding:0;font:600 1rem var(--sans);color:var(--link);text-decoration:underline;text-underline-offset:4px;cursor:pointer}
+
+/* Header */
+.site-header{position:sticky;top:0;z-index:50;background:#173A2E;color:#F3F4EC;border-bottom:1px solid rgba(255,255,255,.08)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:76px;gap:1rem}
+.logo{display:flex;align-items:center;text-decoration:none;flex:none}
+.logo img{height:58px;width:auto}
+.logo-foot{margin-bottom:1rem}
+.logo-foot img{height:88px}
+.nav-links{display:flex;gap:1.7rem;list-style:none;margin:0;padding:0}
+.nav-links a{color:#C4D0C7;text-decoration:none;font-weight:500;font-size:.98rem;padding:.35rem 0;border-bottom:2px solid transparent}
+.nav-links a:hover,.nav-links a[aria-current="true"]{color:#fff;border-color:var(--gold)}
+.nav-right{display:flex;align-items:center;gap:.75rem}
+.nav-right .btn{padding:.6rem 1.1rem;font-size:.95rem}
+.menu-btn{display:none;background:none;border:1.5px solid rgba(255,255,255,.35);color:#fff;border-radius:10px;padding:.45rem .7rem;font:600 .95rem var(--sans);cursor:pointer}
+@media (max-width:1000px){
+  .nav-links{display:none;position:absolute;top:76px;left:0;right:0;flex-direction:column;gap:0;background:#173A2E;padding:.5rem 1.25rem 1.25rem;border-bottom:1px solid rgba(255,255,255,.1)}
+  .nav-links.open{display:flex}
+  .nav-links a{display:block;padding:.85rem 0;border-bottom:1px solid rgba(255,255,255,.08)}
+  .menu-btn{display:inline-flex}
+  .nav-right .btn{display:none}
+}
+
+/* Photo placeholders */
+.ph{position:relative;overflow:hidden;background:#2F5D46}
+.ph>svg,.ph>img{position:absolute;inset:0;width:100%;height:100%}
+.ph>img{object-fit:cover}
+.ph-note{position:absolute;right:.6rem;bottom:.6rem;z-index:2;font-size:.72rem;font-weight:500;background:rgba(10,20,15,.55);color:#fff;padding:.18rem .55rem;border-radius:999px}
+
+/* Hero */
+.hero{position:relative;color:#fff;min-height:min(780px,94vh);display:flex;align-items:flex-end;background:#173A2E}
+.hero .ph{position:absolute;inset:0}
+.hero .ph::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(12,30,23,.9) 0%,rgba(12,30,23,.6) 42%,rgba(12,30,23,0) 72%),linear-gradient(0deg,rgba(12,30,23,.75) 0%,rgba(12,30,23,0) 42%)}
+.hero .ph-note{bottom:auto;top:1rem}
+@media (max-width:760px){.hero .ph::after{background:linear-gradient(0deg,rgba(12,30,23,.92) 0%,rgba(12,30,23,.7) 100%)}}
+.hero-inner{position:relative;z-index:2;padding:6.5rem 0 2.5rem}
+.hero h1{font-size:clamp(2.8rem,6.4vw,5.3rem);max-width:12.5ch}
+.hero .lead{max-width:46ch;font-size:1.2rem;color:#DCE4DD;margin:1.5rem 0 2rem}
+.hero-actions{display:flex;gap:.8rem;flex-wrap:wrap}
+.finder{margin-top:4rem;background:var(--surface);color:var(--text);border-radius:16px;padding:1.1rem;display:grid;grid-template-columns:repeat(4,1fr) auto;gap:.8rem;align-items:end;box-shadow:0 24px 60px -24px rgba(0,0,0,.55)}
+.finder h2{grid-column:1/-1;font-size:1.3rem;margin:.1rem 0 .2rem .1rem}
+label.field,.field-label{display:block;font-size:.85rem;font-weight:600;color:var(--muted);margin:0 0 .35rem .1rem}
+select,input,textarea{font:inherit;color:var(--text);background:var(--bg);border:1.5px solid var(--line);border-radius:10px;padding:.7rem .8rem;width:100%}
+select:hover,input:hover,textarea:hover{border-color:var(--muted)}
+@media (max-width:900px){.finder{grid-template-columns:1fr 1fr}.finder .btn{grid-column:1/-1}}
+@media (max-width:520px){.finder{grid-template-columns:1fr}}
+
+/* Trust strip */
+.trust{background:var(--surface-2);border-bottom:1px solid var(--line)}
+.trust ul{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;list-style:none;margin-block:0;padding:1.7rem 0}
+.trust li{display:flex;gap:.8rem;align-items:flex-start;font-size:.93rem;color:var(--muted);line-height:1.45}
+.trust strong{display:block;color:var(--text);font-size:1rem}
+.trust svg{flex:none;color:var(--canopy)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .trust svg{color:var(--gold)}}
+:root[data-theme="dark"] .trust svg{color:var(--gold)}
+@media (max-width:900px){.trust ul{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.trust ul{grid-template-columns:1fr}}
+
+.section{padding:6rem 0}
+.section-head{display:grid;grid-template-columns:1fr 1fr;gap:2rem 4rem;align-items:end;margin-bottom:3rem}
+.section-head p{color:var(--muted);max-width:52ch;margin:0}
+@media (max-width:800px){.section-head{grid-template-columns:1fr}.section{padding:4.5rem 0}}
+
+/* About */
+.about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:4rem;align-items:start}
+.about-copy h2{margin-bottom:1.5rem;max-width:14ch}
+.about-copy p{max-width:58ch;color:var(--muted)}
+.values{list-style:none;padding:0;margin:2.2rem 0 0;display:grid;gap:1.3rem}
+.values li{display:grid;grid-template-columns:44px 1fr;gap:1rem}
+.values .ico{width:44px;height:44px;border-radius:50%;background:var(--surface-2);display:grid;place-items:center;color:var(--canopy)}
+.values h3{font-family:var(--sans);font-weight:700;font-size:1.05rem;margin:.1rem 0 .2rem}
+.values p{margin:0;font-size:.97rem}
+.about-visual{position:relative}
+.about-visual .ph{aspect-ratio:4/5;border-radius:28px}
+.about-visual .ph-note{bottom:auto;top:.8rem}
+.stats{position:relative;margin:-4.5rem 1.5rem 0;background:#173A2E;color:#fff;border-radius:18px;padding:1.4rem 1.6rem;display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;z-index:2}
+.stats div{display:flex;flex-direction:column}
+.stats b{font-family:var(--serif);font-weight:400;font-size:2.1rem;line-height:1;color:var(--gold)}
+.stats span{font-size:.85rem;color:#C4D0C7;margin-top:.35rem}
+@media (max-width:900px){.about-grid{grid-template-columns:1fr;gap:2.5rem}}
+.quotes{margin-top:5.5rem}
+.quotes h3{font-size:1.9rem;margin-bottom:1.8rem}
+.quote-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2.5rem}
+.quote-grid figure{margin:0;padding-left:1.25rem;border-left:3px solid var(--gold)}
+.quote-grid blockquote{margin:0 0 1rem;font-family:var(--serif);font-size:1.25rem;line-height:1.4}
+.quote-grid figcaption{font-size:.92rem;color:var(--muted)}
+.quote-grid figcaption b{color:var(--text);display:block}
+@media (max-width:900px){.quote-grid{grid-template-columns:1fr;gap:2rem}}
+
+/* Destinations */
+.destinations{background:var(--surface-2)}
+.dest-layout{display:grid;grid-template-columns:.85fr 1.15fr;gap:3rem;align-items:start}
+.map-panel{position:sticky;top:92px;background:var(--surface);border:1px solid var(--line);border-radius:28px;padding:1.4rem 1.4rem 1rem}
+.map-panel h3{font-size:1.35rem}
+.map-panel .hint{font-size:.9rem;color:var(--muted);margin:.3rem 0 .6rem}
+.map .land{fill:var(--map-land);stroke:var(--muted);stroke-width:1.2;stroke-linejoin:round}
+.map .water{fill:var(--map-water)}
+.map .river{fill:none;stroke:var(--map-water);stroke-width:3;stroke-linecap:round}
+.map text{font-family:var(--sans);font-size:15px;font-weight:600;fill:var(--text);paint-order:stroke;stroke:var(--surface);stroke-width:4px;stroke-linejoin:round}
+.map .small{font-size:13px;font-weight:500;fill:var(--muted)}
+.map .pin{cursor:pointer;outline:none}
+.map .pin .dot{fill:var(--pin);stroke:var(--surface);stroke-width:2.5}
+.map .pin .halo{fill:var(--gold);opacity:0;transition:opacity .2s}
+.map .pin:hover .halo,.map .pin:focus-visible .halo,.map .pin.is-active .halo{opacity:.45}
+.map .pin:focus-visible .dot{stroke:var(--focus);stroke-width:4}
+.map .city{fill:var(--text)}
+.dest-list{display:flex;flex-direction:column;gap:1.2rem}
+.dest{display:grid;grid-template-columns:230px 1fr;background:var(--surface);border:1.5px solid var(--line);border-radius:16px;overflow:hidden;transition:border-color .25s,box-shadow .25s;scroll-margin-top:96px}
+.dest.is-active{border-color:var(--gold);box-shadow:0 0 0 4px rgba(230,174,47,.3)}
+.dest .ph{min-height:220px}
+.tag{position:absolute;top:.75rem;left:.75rem;z-index:2;background:var(--gold);color:#1A1A12;font-weight:700;font-size:.8rem;padding:.25rem .6rem;border-radius:5px}
+.dest-body{padding:1.25rem 1.5rem 1.35rem}
+.region{color:var(--muted);font-size:.9rem;font-weight:500;margin:0}
+.dest h3{font-size:1.6rem;margin:.2rem 0 .55rem}
+.dest-body>p{color:var(--muted);font-size:.98rem;margin-bottom:.8rem}
+.chips{display:flex;flex-wrap:wrap;gap:.4rem;list-style:none;padding:0;margin:0 0 1rem}
+.chips li{font-size:.84rem;background:var(--surface-2);padding:.25rem .7rem;border-radius:999px}
+@media (max-width:980px){.dest-layout{grid-template-columns:1fr}.map-panel{position:static;max-width:520px}}
+@media (max-width:580px){.dest{grid-template-columns:1fr}.dest .ph{min-height:190px}}
+
+/* Experiences */
+.exp-grid{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:minmax(300px,auto);gap:1.1rem}
+.exp{position:relative;border-radius:18px;overflow:hidden;color:#fff;display:flex;flex-direction:column;justify-content:flex-end;min-height:300px}
+.exp .ph{position:absolute;inset:0}
+.exp .ph::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(10,24,18,.92) 0%,rgba(10,24,18,.55) 45%,rgba(10,24,18,0) 75%)}
+.exp .ph-note{bottom:auto;top:.6rem}
+.exp-body{position:relative;z-index:2;padding:1.3rem 1.4rem 1.4rem}
+.exp h3{font-size:1.65rem}
+.exp .where{font-size:.92rem;color:#D5DED7;margin:.3rem 0 .8rem}
+.exp dl{display:flex;flex-wrap:wrap;gap:.3rem 1.2rem;margin:0 0 1rem;font-size:.86rem}
+.exp dt{color:#AEBFB3;display:inline}
+.exp dd{margin:0 0 0 .3rem;display:inline;font-weight:600}
+.exp .toggle{background:rgba(255,255,255,.12);color:#fff;border:1.5px solid rgba(255,255,255,.5);border-radius:999px;padding:.5rem 1rem;font:600 .9rem var(--sans);cursor:pointer}
+.exp .toggle:hover{background:rgba(255,255,255,.22)}
+.exp .toggle[aria-pressed="true"]{background:var(--gold);border-color:var(--gold);color:#1A1A12}
+.exp.feature{grid-column:span 2;grid-row:span 2}
+.exp.feature h3{font-size:clamp(2rem,3.4vw,2.8rem)}
+.exp.feature .desc{max-width:44ch;color:#E3EAE4}
+@media (max-width:900px){.exp-grid{grid-template-columns:1fr 1fr}.exp.feature{grid-column:1/-1;grid-row:span 1;min-height:420px}}
+@media (max-width:580px){.exp-grid{grid-template-columns:1fr}}
+
+/* Journey */
+.journey{background:#173A2E;color:#F3F4EC}
+.journey .section-head p{color:#C4D0C7}
+.journey-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:4rem;align-items:start}
+.timeline{list-style:none;margin:0;padding:0;position:relative}
+.timeline::before{content:"";position:absolute;left:23px;top:10px;bottom:10px;border-left:2px dashed rgba(230,174,47,.55)}
+.timeline li{position:relative;display:grid;grid-template-columns:48px 1fr;gap:1.1rem;padding:0 0 1.5rem}
+.timeline .day{width:48px;height:48px;border-radius:50%;background:#173A2E;border:2px solid var(--gold);display:grid;place-items:center;font-weight:700;color:var(--gold);font-size:.8rem;line-height:1;text-align:center}
+.timeline h3{font-family:var(--sans);font-weight:700;font-size:1.05rem;margin:.35rem 0 .15rem}
+.timeline p{margin:0;color:#C4D0C7;font-size:.97rem}
+.trip-card{background:#1F4A3A;border-radius:22px;padding:1.8rem;position:sticky;top:92px}
+.trip-card h3{font-size:1.5rem;margin-bottom:1rem}
+.trip-card h4{margin:1.2rem 0 .5rem;font-size:.95rem}
+.trip-card ul{margin:0;padding-left:1.1rem;color:#D5DED7;font-size:.95rem}
+.trip-card li{margin-bottom:.3rem}
+.trip-card .price{margin:1.5rem 0 1.2rem;padding-top:1.2rem;border-top:1px solid rgba(255,255,255,.14);color:#C4D0C7;font-size:.95rem}
+.trip-card .price b{display:block;font-family:var(--serif);font-weight:400;font-size:1.6rem;color:#fff}
+@media (max-width:900px){.journey-grid{grid-template-columns:1fr;gap:2.5rem}.trip-card{position:static}}
+
+/* Gallery */
+.gallery{background:var(--surface-2)}
+.g-filters{display:flex;flex-wrap:wrap;gap:.5rem;margin:0 0 2rem;padding:0;list-style:none}
+.g-filters button{font:600 .93rem var(--sans);padding:.55rem 1rem;border-radius:999px;border:1.5px solid var(--line);background:var(--surface);color:var(--text);cursor:pointer}
+.g-filters button:hover{border-color:var(--muted)}
+.g-filters button[aria-pressed="true"]{background:var(--montane);border-color:var(--montane);color:#fff}
+.g-filters .count{font-weight:500;opacity:.7;margin-left:.3rem}
+.g-grid{columns:3 280px;column-gap:1rem}
+.g-item{display:block;width:100%;margin:0 0 1rem;padding:0;border:0;background:none;cursor:zoom-in;break-inside:avoid;text-align:left;color:var(--text);font:inherit}
+.g-item img{width:100%;height:auto;border-radius:14px;transition:opacity .2s}
+.g-item:hover img{opacity:.88}
+.g-item span{display:block;font-size:.88rem;color:var(--muted);padding:.45rem .2rem 0}
+.g-empty{background:var(--surface);border:1.5px dashed var(--line);border-radius:16px;padding:2rem;max-width:560px}
+.g-empty p{color:var(--muted)}
+.lightbox{border:0;padding:0;background:transparent;max-width:min(1100px,94vw);width:100%;color:#fff}
+.lightbox::backdrop{background:rgba(6,14,10,.92)}
+.lb-frame{position:relative;display:flex;flex-direction:column;align-items:center}
+.lb-frame img{max-width:100%;max-height:78vh;border-radius:10px;object-fit:contain}
+.lb-bar{display:flex;align-items:center;justify-content:space-between;gap:1rem;width:100%;margin-top:.9rem}
+.lb-bar p{margin:0;font-size:.98rem}
+.lb-bar .pos{color:#AEBFB3;font-size:.88rem;margin-left:.6rem}
+.lb-btns{display:flex;gap:.5rem}
+.lb-btns button{font:600 .92rem var(--sans);background:rgba(255,255,255,.1);color:#fff;border:1.5px solid rgba(255,255,255,.4);border-radius:999px;padding:.5rem 1rem;cursor:pointer}
+.lb-btns button:hover{background:rgba(255,255,255,.2)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .g-filters button[aria-pressed="true"]{background:var(--gold);border-color:var(--gold);color:#1A1A12}}
+:root[data-theme="dark"] .g-filters button[aria-pressed="true"]{background:var(--gold);border-color:var(--gold);color:#1A1A12}
+@media (max-width:560px){.lb-bar{flex-direction:column;align-items:flex-start}}
+
+/* Contact */
+.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:4rem;align-items:start}
+.contact-intro h2{margin-bottom:1.2rem}
+.contact-intro>p{color:var(--muted)}
+.reach{list-style:none;padding:0;margin:1.8rem 0 2.5rem;display:grid;gap:.9rem}
+.reach li{display:grid;grid-template-columns:40px 1fr;gap:.9rem;align-items:center}
+.reach .ico{width:40px;height:40px;border-radius:50%;background:var(--surface-2);display:grid;place-items:center;color:var(--canopy)}
+.reach span{display:block;font-size:.85rem;color:var(--muted)}
+.reach a{font-weight:600;color:var(--text);text-decoration:none}
+.reach a:hover{text-decoration:underline}
+.faq h3{font-size:1.5rem;margin-bottom:.8rem}
+.faq details{border-top:1px solid var(--line);padding:.95rem 0}
+.faq details:last-child{border-bottom:1px solid var(--line)}
+.faq summary{cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:1rem}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:1.3rem;line-height:1;color:var(--muted)}
+.faq details[open] summary::after{content:"\2013"}
+.faq details p{margin:.6rem 0 0;color:var(--muted);font-size:.97rem}
+.form-panel{background:var(--surface);border:1px solid var(--line);border-radius:24px;padding:2rem}
+.form-panel h3{font-size:1.7rem;margin-bottom:.3rem}
+.form-panel .sub{color:var(--muted);font-size:.95rem;margin-bottom:1.6rem}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem}
+.row>div{min-width:0}
+@media (max-width:560px){.row{grid-template-columns:1fr}}
+fieldset{border:0;padding:0;margin:0 0 1.2rem;min-width:0}
+legend{font-size:.85rem;font-weight:600;color:var(--muted);margin:0 0 .5rem .1rem;padding:0}
+.pick{display:flex;flex-wrap:wrap;gap:.45rem}
+.pick label{position:relative;cursor:pointer}
+.pick input{position:absolute;opacity:0;width:1px;height:1px}
+.pick span{display:inline-block;padding:.45rem .85rem;border:1.5px solid var(--line);border-radius:999px;font-size:.92rem;background:var(--bg);transition:background .15s,border-color .15s}
+.pick label:hover span{border-color:var(--muted)}
+.pick input:checked+span{background:var(--montane);border-color:var(--montane);color:#fff}
+.pick input:focus-visible+span{outline:3px solid var(--focus);outline-offset:2px}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .pick input:checked+span{background:var(--gold);border-color:var(--gold);color:#1A1A12}}
+:root[data-theme="dark"] .pick input:checked+span{background:var(--gold);border-color:var(--gold);color:#1A1A12}
+.req{color:#B3401F}
+.err{color:#B3401F;font-size:.85rem;margin:.35rem 0 0 .1rem;min-height:0}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .err,:root:not([data-theme="light"]) .req{color:#F08B6B}}
+:root[data-theme="dark"] .err,:root[data-theme="dark"] .req{color:#F08B6B}
+input[aria-invalid="true"]{border-color:#B3401F}
+.form-actions{display:flex;flex-wrap:wrap;gap:.8rem;align-items:center;margin-top:1.4rem}
+.form-actions small{color:var(--muted);flex-basis:100%}
+.success{text-align:left;padding:1rem 0}
+.success .check{width:56px;height:56px;border-radius:50%;background:var(--gold);display:grid;place-items:center;margin-bottom:1.2rem;color:#1A1A12}
+.success h3{margin-bottom:.6rem}
+.success p{color:var(--muted)}
+@media (max-width:980px){.contact-grid{grid-template-columns:1fr;gap:3rem}}
+
+/* Footer */
+.site-footer{background:#10281F;color:#C4D0C7;padding:4rem 0 2rem;font-size:.95rem}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:2.5rem}
+.site-footer h3{font-family:var(--sans);font-weight:700;font-size:1rem;color:#fff;margin-bottom:.9rem}
+.site-footer ul{list-style:none;margin:0;padding:0;display:grid;gap:.45rem}
+.site-footer a{color:#C4D0C7;text-decoration:none}
+.site-footer a:hover{color:#fff;text-decoration:underline}
+.foot-bottom{margin-top:3rem;padding-top:1.4rem;border-top:1px solid rgba(255,255,255,.1);display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem;font-size:.87rem}
+@media (max-width:900px){.foot-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.foot-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="wrap nav" aria-label="Main">
+    <a class="logo" href="#home">
+      <img src="logo/tirinyi-safaris-logo.png" alt="Tirinyi Safaris, home" width="120" height="59">
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About us</a></li>
+      <li><a href="#destinations">Destinations</a></li>
+      <li><a href="#experiences">Experiences</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact us</a></li>
+    </ul>
+    <div class="nav-right">
+      <a class="btn btn-gold" href="#contact">Plan my safari</a>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navLinks">Menu</button>
+    </div>
+  </nav>
+</header>
+
+<main>
+<!-- HOME -->
+<section class="hero" id="home" aria-labelledby="heroTitle">
+  <div class="ph"><img src="photos/elephant-spraying-water.jpg" alt="An elephant spraying water beside thick green bush" fetchpriority="high" style="object-position:72% center"></div>
+  <div class="wrap hero-inner">
+    <h1 id="heroTitle">Meet the mountain gorillas. Stay for everything else.</h1>
+    <p class="lead">Private, guided safaris across Uganda, planned by a Kampala team that drives these roads every week. Rainforest, savannah, the Nile and quiet island lakes in one trip.</p>
+    <div class="hero-actions">
+      <a class="btn btn-gold" href="#contact">Plan my safari</a>
+      <a class="btn btn-ghost" href="https://wa.me/256701377305" target="_blank" rel="noopener">Chat on WhatsApp</a>
+    </div>
+
+    <div class="finder" role="search" aria-label="Start planning a trip">
+      <h2>Start planning</h2>
+      <div>
+        <label class="field" for="fDest">Where to</label>
+        <select id="fDest">
+          <option value="">Not sure yet</option>
+          <option value="bwindi">Bwindi Impenetrable</option>
+          <option value="queen-elizabeth">Queen Elizabeth</option>
+          <option value="murchison">Murchison Falls</option>
+          <option value="lake-mburo">Lake Mburo</option>
+          <option value="bunyonyi">Lake Bunyonyi</option>
+          <option value="kidepo">Kidepo Valley</option>
+        </select>
+      </div>
+      <div>
+        <label class="field" for="fExp">Experience</label>
+        <select id="fExp">
+          <option value="">Anything</option>
+          <option value="gorilla">Gorilla trekking</option>
+          <option value="chimp">Chimpanzee tracking</option>
+          <option value="boat">Boat safaris</option>
+          <option value="hiking">Hiking</option>
+          <option value="walks">Nature walks</option>
+          <option value="birding">Birding safaris</option>
+        </select>
+      </div>
+      <div>
+        <label class="field" for="fMonth">When</label>
+        <select id="fMonth" class="month-select"></select>
+      </div>
+      <div>
+        <label class="field" for="fPeople">Travellers</label>
+        <select id="fPeople">
+          <option value="1">1 adult</option>
+          <option value="2" selected>2 adults</option>
+          <option value="3">3 adults</option>
+          <option value="4">4 adults</option>
+          <option value="6">5 to 6 adults</option>
+          <option value="8">7 or more</option>
+        </select>
+      </div>
+      <button class="btn btn-gold" id="finderGo" type="button">Start my enquiry</button>
+    </div>
+  </div>
+</section>
+
+<section class="trust" aria-label="Why travel with us">
+  <ul class="wrap">
+    <li><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3l7 3v5c0 5-3 8.5-7 10-4-1.5-7-5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg><div><strong>Licensed by UTB</strong>Uganda Tourism Board licence no. to be added</div></li>
+    <li><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M14 20c0-2.5 1.3-4.5 3-5 2 .3 4 2.4 4 5"/></svg><div><strong>AUTO member</strong>Association of Uganda Tour Operators</div></li>
+    <li><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M8 6v12M12 10h6M12 14h4"/></svg><div><strong>Permits sorted</strong>Gorilla and chimp permits booked with UWA for you</div></li>
+    <li><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><strong>Support on the road</strong>A planner on WhatsApp every day of your trip</div></li>
+  </ul>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about" aria-labelledby="aboutTitle">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-copy">
+        <h2 id="aboutTitle">Ugandan guides, planning Uganda trips</h2>
+        <p>Tirinyi Safaris is a safari company based in Kampala. Our guides grew up near the parks we visit, and our planners have trekked to the gorillas, cruised the Kazinga Channel and driven the long road to Kidepo more times than they can count.</p>
+        <p>We keep groups small, travel in our own 4x4 vehicles and book every lodge and permit ourselves. When you ask a question, the person answering has been there.</p>
+        <ul class="values">
+          <li>
+            <div class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-5.5-7-11a7 7 0 0114 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+            <div><h3>Local from the ground up</h3><p>Guides, drivers and lodges from the communities around each park.</p></div>
+          </li>
+          <li>
+            <div class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16v10H4z"/><path d="M4 11h16"/></svg></div>
+            <div><h3>One price, no surprises</h3><p>Park fees, permits, meals and transport are listed clearly before you pay.</p></div>
+          </li>
+          <li>
+            <div class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 19c8 0 14-6 14-14-8 0-14 6-14 14z"/><path d="M5 19l7-7"/></svg></div>
+            <div><h3>Travel that gives back</h3><p>Part of every booking supports conservation and community projects near the parks.</p></div>
+          </li>
+        </ul>
+      </div>
+      <div class="about-visual">
+        <div class="ph"><img src="photos/lion-and-safari-vehicle.jpg" alt="A lion resting in the grass while a safari vehicle waits behind" loading="lazy" style="object-position:55% center"></div>
+        <div class="stats" aria-label="Tirinyi Safaris in numbers">
+          <div><b>12</b><span>years guiding</span></div>
+          <div><b>2,400+</b><span>travellers hosted</span></div>
+          <div><b>4.9</b><span>average review</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="quotes">
+      <h3>What travellers say</h3>
+      <div class="quote-grid">
+        <figure>
+          <blockquote>“Our guide spotted the gorilla family before the trackers did. Every day felt carefully planned, but never rushed.”</blockquote>
+          <figcaption><b>Hannah and Tom</b>United Kingdom, gorilla trek 2025</figcaption>
+        </figure>
+        <figure>
+          <blockquote>“Kidepo was the highlight. We had the valley almost to ourselves, and our planner answered every WhatsApp message within minutes.”</blockquote>
+          <figcaption><b>Priya N.</b>Canada, Kidepo and Murchison 2025</figcaption>
+        </figure>
+        <figure>
+          <blockquote>“A brilliant family trip. The kids loved the Kazinga Channel boat ride and canoeing on Lake Bunyonyi.”</blockquote>
+          <figcaption><b>The Okafor family</b>Nigeria, 9-day safari 2026</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DESTINATIONS -->
+<section class="section destinations" id="destinations" aria-labelledby="destTitle">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 id="destTitle">Six places we know by heart</h2>
+      <p>From the misty south-west to the far north-east, each park shows a different side of Uganda. Pick one on the map, or combine a few into a longer journey.</p>
+    </div>
+    <div class="dest-layout">
+      <aside class="map-panel" aria-label="Destination map">
+        <h3>Where they are</h3>
+        <p class="hint">Select a park to jump to it.</p>
+        <div id="mapHost"></div>
+      </aside>
+
+      <div class="dest-list">
+        <article class="dest" id="d-bwindi" data-dest="bwindi">
+          <div class="ph"><img src="photos/gorilla-profile.jpg" alt="A silverback mountain gorilla among forest leaves" loading="lazy" style="object-position:30% center"><span class="tag">3 days</span></div>
+          <div class="dest-body">
+            <p class="region">South-west Uganda</p>
+            <h3>Bwindi Impenetrable National Park</h3>
+            <p>Ancient montane rainforest and home to around half of the world’s mountain gorillas. Treks start early and end with an hour you won’t forget.</p>
+            <ul class="chips"><li>Gorilla trekking</li><li>Batwa cultural trail</li><li>Forest birding</li></ul>
+            <button class="text-link" data-enquire="bwindi">Enquire about Bwindi</button>
+          </div>
+        </article>
+
+        <article class="dest" id="d-queen-elizabeth" data-dest="queen-elizabeth">
+          <div class="ph"><img src="photos/hippos-by-riverbank.jpg" alt="Hippos in the water below a grassy riverbank" loading="lazy" style="object-position:center 75%"><span class="tag">3 days</span></div>
+          <div class="dest-body">
+            <p class="region">Western Uganda</p>
+            <h3>Queen Elizabeth National Park</h3>
+            <p>Open savannah, crater lakes and the Kazinga Channel, where hippos crowd the banks. In the Ishasha sector, look up for tree-climbing lions.</p>
+            <ul class="chips"><li>Kazinga Channel cruise</li><li>Ishasha lions</li><li>Kyambura Gorge chimps</li></ul>
+            <button class="text-link" data-enquire="queen-elizabeth">Enquire about Queen Elizabeth</button>
+          </div>
+        </article>
+
+        <article class="dest" id="d-murchison" data-dest="murchison">
+          <div class="ph"><img src="photos/murchison-falls-from-nile.jpg" alt="Murchison Falls seen from a boat on the Nile" loading="lazy" style="object-position:center 60%"><span class="tag">3 days</span></div>
+          <div class="dest-body">
+            <p class="region">North-west Uganda</p>
+            <h3>Murchison Falls National Park</h3>
+            <p>Uganda’s largest park, where the Nile forces its way through a narrow rock gorge and thunders down. Giraffe, elephant and lion roam the northern plains.</p>
+            <ul class="chips"><li>Boat to the falls</li><li>Top of the falls hike</li><li>Game drives</li></ul>
+            <button class="text-link" data-enquire="murchison">Enquire about Murchison Falls</button>
+          </div>
+        </article>
+
+        <article class="dest" id="d-lake-mburo" data-dest="lake-mburo">
+          <div class="ph"><img src="photos/zebras-grazing.jpg" alt="Two zebras grazing beside a candelabra tree" loading="lazy" style="object-position:60% center"><span class="tag">2 days</span></div>
+          <div class="dest-body">
+            <p class="region">South-west, closest to Kampala</p>
+            <h3>Lake Mburo National Park</h3>
+            <p>The nearest savannah park to Kampala, known for zebra, eland and safaris on foot. A good first stop on the way west.</p>
+            <ul class="chips"><li>Walking safari</li><li>Lake boat trip</li><li>Horseback safari</li></ul>
+            <button class="text-link" data-enquire="lake-mburo">Enquire about Lake Mburo</button>
+          </div>
+        </article>
+
+        <article class="dest" id="d-bunyonyi" data-dest="bunyonyi">
+          <div class="ph"><img src="photos/boat-lake-guest.jpg" alt="A traveller in a life jacket on a boat on a calm lake" loading="lazy" style="object-position:center 35%"><span class="tag">2 days</span></div>
+          <div class="dest-body">
+            <p class="region">Kabale, south-west Uganda</p>
+            <h3>Lake Bunyonyi</h3>
+            <p>A calm lake of island hideaways and terraced hills, close to the gorilla parks. The place to rest your legs after trekking.</p>
+            <ul class="chips"><li>Island canoe trips</li><li>Community walks</li><li>Lakeside lodges</li></ul>
+            <button class="text-link" data-enquire="bunyonyi">Enquire about Lake Bunyonyi</button>
+          </div>
+        </article>
+
+        <article class="dest" id="d-kidepo" data-dest="kidepo">
+          <div class="ph"><img src="photos/giraffes-dry-season.jpg" alt="Giraffes browsing in dry-season bush" loading="lazy" style="object-position:center 45%"><span class="tag">4 days</span></div>
+          <div class="dest-body">
+            <p class="region">Karamoja, north-east Uganda</p>
+            <h3>Kidepo Valley National Park</h3>
+            <p>Remote, wild and rarely crowded. Big skies over the Narus Valley, with a chance of cheetah and ostrich you won’t see elsewhere in Uganda.</p>
+            <ul class="chips"><li>Narus Valley drives</li><li>Karamojong homestead</li><li>Scenic flights in</li></ul>
+            <button class="text-link" data-enquire="kidepo">Enquire about Kidepo</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCES -->
+<section class="section" id="experiences" aria-labelledby="expTitle">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 id="expTitle">Choose how you want to spend your days</h2>
+      <p>Mix and match. Add the experiences you like to your enquiry and we’ll build the route around them.</p>
+    </div>
+    <div class="exp-grid">
+      <article class="exp feature">
+        <div class="ph"><img src="photos/gorilla-close-up.jpg" alt="A mountain gorilla looking out from behind leaves" loading="lazy" style="object-position:center 35%"></div>
+        <div class="exp-body">
+          <h3>Gorilla trekking</h3>
+          <p class="where">Bwindi Impenetrable and Mgahinga</p>
+          <p class="desc">Follow expert trackers through the forest to a habituated gorilla family, then spend one quiet hour watching them feed, play and rest.</p>
+          <dl><div><dt>Time on trail</dt><dd>2 to 8 hours</dd></div><div><dt>Fitness</dt><dd>Moderate to high</dd></div><div><dt>Permit</dt><dd>We arrange it</dd></div></dl>
+          <button class="toggle" data-exp="gorilla" aria-pressed="false">Add to my enquiry</button>
+        </div>
+      </article>
+      <article class="exp">
+        <div class="ph"><img src="photos/chimp-by-tree.jpg" alt="A chimpanzee sitting against a mossy tree" loading="lazy" style="object-position:35% center"></div>
+        <div class="exp-body">
+          <h3>Chimpanzee tracking</h3>
+          <p class="where">Kibale Forest, Kyambura Gorge, Budongo</p>
+          <dl><div><dt>Time</dt><dd>2 to 4 hours</dd></div><div><dt>Fitness</dt><dd>Moderate</dd></div></dl>
+          <button class="toggle" data-exp="chimp" aria-pressed="false">Add to my enquiry</button>
+        </div>
+      </article>
+      <article class="exp">
+        <div class="ph"><img src="photos/elephants-in-water.jpg" alt="Two elephants bathing at the water’s edge" loading="lazy" style="object-position:center 55%"></div>
+        <div class="exp-body">
+          <h3>Boat safaris</h3>
+          <p class="where">Kazinga Channel, the Nile, Lake Mburo</p>
+          <dl><div><dt>Time</dt><dd>2 to 3 hours</dd></div><div><dt>Fitness</dt><dd>Easy</dd></div></dl>
+          <button class="toggle" data-exp="boat" aria-pressed="false">Add to my enquiry</button>
+        </div>
+      </article>
+      <article class="exp">
+        <div class="ph"><img src="photos/hiking-mountain-trail.jpg" alt="A group of hikers crossing high moorland towards a rocky peak" loading="lazy" style="object-position:center 40%"></div>
+        <div class="exp-body">
+          <h3>Hiking</h3>
+          <p class="where">Rwenzori Mountains, Mount Elgon, Sipi Falls</p>
+          <dl><div><dt>Time</dt><dd>Half a day to 8 days</dd></div><div><dt>Fitness</dt><dd>Varies</dd></div></dl>
+          <button class="toggle" data-exp="hiking" aria-pressed="false">Add to my enquiry</button>
+        </div>
+      </article>
+      <article class="exp">
+        <div class="ph"><img src="photos/nature-walk-forest-trail.jpg" alt="A group walking a misty forest trail in rain boots" loading="lazy" style="object-position:60% center"></div>
+        <div class="exp-body">
+          <h3>Nature walks</h3>
+          <p class="where">Lake Mburo, Bigodi Wetland, Bwindi trails</p>
+          <dl><div><dt>Time</dt><dd>2 to 3 hours</dd></div><div><dt>Fitness</dt><dd>Easy</dd></div></dl>
+          <button class="toggle" data-exp="walks" aria-pressed="false">Add to my enquiry</button>
+        </div>
+      </article>
+      <article class="exp">
+        <div class="ph"><img src="photos/birding-group-forest-trail.jpg" alt="A guide and birders with binoculars and scopes on a forest track" loading="lazy" style="object-position:center 30%"></div>
+        <div class="exp-body">
+          <h3>Birding safaris</h3>
+          <p class="where">Mabamba Swamp, Bwindi, Murchison</p>
+          <dl><div><dt>Time</dt><dd>Full day</dd></div><div><dt>Fitness</dt><dd>Easy</dd></div></dl>
+          <button class="toggle" data-exp="birding" aria-pressed="false">Add to my enquiry</button>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SAMPLE JOURNEY -->
+<section class="section journey" id="journeys" aria-labelledby="journeyTitle">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 id="journeyTitle">A first-timer’s route: 8 days, west to south-west</h2>
+      <p>Our most-requested trip. Savannah, chimps, the Kazinga Channel and a gorilla trek, finishing with two slow days on the lake. Every day can be changed.</p>
+    </div>
+    <div class="journey-grid">
+      <ol class="timeline">
+        <li><div class="day">Day<br>1</div><div><h3>Arrive in Entebbe</h3><p>Airport pickup, a lakeside dinner and an early night.</p></div></li>
+        <li><div class="day">Day<br>2</div><div><h3>Lake Mburo</h3><p>Drive west, then an evening boat trip among the hippos.</p></div></li>
+        <li><div class="day">Day<br>3</div><div><h3>On to Queen Elizabeth</h3><p>Morning walking safari with zebra, then continue west.</p></div></li>
+        <li><div class="day">Day<br>4</div><div><h3>Chimps and the Kazinga Channel</h3><p>Track chimpanzees in Kyambura Gorge, then an afternoon boat safari.</p></div></li>
+        <li><div class="day">Day<br>5</div><div><h3>Ishasha to Bwindi</h3><p>Search for tree-climbing lions before climbing into the forest.</p></div></li>
+        <li><div class="day">Day<br>6</div><div><h3>Gorilla trekking</h3><p>Your trek in Bwindi and an hour with a gorilla family.</p></div></li>
+        <li><div class="day">Day<br>7</div><div><h3>Lake Bunyonyi</h3><p>Canoe between the islands and rest by the water.</p></div></li>
+        <li><div class="day">Day<br>8</div><div><h3>Back to Entebbe</h3><p>Scenic flight or road transfer in time for your departure.</p></div></li>
+      </ol>
+      <aside class="trip-card">
+        <h3>What’s in the price</h3>
+        <h4>Included</h4>
+        <ul>
+          <li>Private 4x4 with an English-speaking driver-guide</li>
+          <li>All lodges and meals on safari</li>
+          <li>Park entry, one gorilla permit and one chimp permit each</li>
+          <li>Boat safaris and bottled water</li>
+        </ul>
+        <h4>Not included</h4>
+        <ul>
+          <li>International flights and Uganda visa</li>
+          <li>Tips, lodge drinks and travel insurance</li>
+        </ul>
+        <p class="price"><b>Priced on request</b>Depends on your dates, group size and lodge style.</p>
+        <button class="btn btn-gold" data-journey type="button">Ask about this route</button>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section gallery" id="gallery" aria-labelledby="galleryTitle">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 id="galleryTitle">Moments from the trail</h2>
+      <p>Photos from our trips across Uganda. Choose an experience to see more of it, and select any photo to view it larger.</p>
+    </div>
+    <ul class="g-filters" id="gFilters" aria-label="Filter photos by experience"></ul>
+    <div class="g-grid" id="gGrid" aria-live="polite"></div>
+    <div class="g-empty" id="gEmpty" hidden>
+      <h3 id="gEmptyTitle">No photos here yet</h3>
+      <p id="gEmptyText">We’re adding more soon.</p>
+      <button class="btn btn-gold" id="gEmptyBtn" type="button">Ask about this experience</button>
+    </div>
+  </div>
+  <dialog class="lightbox" id="lightbox" aria-labelledby="lbCaption">
+    <div class="lb-frame">
+      <img id="lbImg" src="" alt="">
+      <div class="lb-bar">
+        <p><span id="lbCaption"></span><span class="pos" id="lbPos"></span></p>
+        <div class="lb-btns">
+          <button type="button" id="lbPrev">Previous</button>
+          <button type="button" id="lbNext">Next</button>
+          <button type="button" id="lbClose">Close</button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact" aria-labelledby="contactTitle">
+  <div class="wrap contact-grid">
+    <div class="contact-intro">
+      <h2 id="contactTitle">Tell us about your trip</h2>
+      <p>Share a few details and a trip planner will send you a draft itinerary and price, usually within 24 hours.</p>
+      <ul class="reach">
+        <li><div class="ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l1.3-3.9A8 8 0 1112 20a8 8 0 01-4-1.1z"/></svg></div><div><span>WhatsApp</span><a href="https://wa.me/256701377305" target="_blank" rel="noopener">+256 701 377 305</a></div></li>
+        <li><div class="ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div><div><span>Email</span><a href="mailto:isaaclgo150390@gmail.com">isaaclgo150390@gmail.com</a></div></li>
+        <li><div class="ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-5.5-7-11a7 7 0 0114 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div><div><span>Office</span>Plot 00, Kampala Road, Kampala</div></li>
+      </ul>
+
+      <div class="faq">
+        <h3>Before you travel</h3>
+        <details><summary>When is the best time to visit?</summary><p>Uganda is a year-round destination. The drier months, December to February and June to August, are the easiest for trekking and game drives.</p></details>
+        <details><summary>Do I need a visa?</summary><p>Most visitors do, and you apply online through the official Uganda e-Visa portal. Some regional visitors are exempt, so check before you travel.</p></details>
+        <details><summary>How do gorilla permits work?</summary><p>Permits are issued by the Uganda Wildlife Authority and sell out in busy months. We book yours as soon as you confirm, so enquire early.</p></details>
+        <details><summary>What should I pack for trekking?</summary><p>Waterproof hiking boots, long sleeves and trousers, a light rain jacket, garden gloves for grabbing vines, and a small daypack.</p></details>
+        <details><summary>How do I pay?</summary><p>A deposit confirms your trip and permits. The balance is due before you travel, by bank transfer, card or mobile money.</p></details>
+      </div>
+    </div>
+
+    <div class="form-panel">
+      <form id="enquiry" novalidate>
+        <h3>Booking enquiry</h3>
+        <p class="sub">Fields marked <span class="req">*</span> are required. Everything else helps us plan.</p>
+
+        <div class="row">
+          <div>
+            <label class="field" for="name">Full name <span class="req">*</span></label>
+            <input id="name" name="name" autocomplete="name" aria-describedby="name-err">
+            <p class="err" id="name-err"></p>
+          </div>
+          <div>
+            <label class="field" for="email">Email <span class="req">*</span></label>
+            <input id="email" name="email" type="email" autocomplete="email" aria-describedby="email-err">
+            <p class="err" id="email-err"></p>
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <label class="field" for="phone">WhatsApp number <span class="req">*</span></label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+256 770 900 123" aria-describedby="phone-err">
+            <p class="err" id="phone-err"></p>
+          </div>
+          <div>
+            <label class="field" for="country">Country you live in</label>
+            <input id="country" name="country" autocomplete="country-name">
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <label class="field" for="month">Travel month</label>
+            <select id="month" name="month" class="month-select"></select>
+          </div>
+          <div>
+            <label class="field" for="length">Trip length</label>
+            <select id="length" name="length">
+              <option>Not sure yet</option>
+              <option>2 to 3 days</option>
+              <option>4 to 6 days</option>
+              <option selected>7 to 10 days</option>
+              <option>11 days or more</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            <label class="field" for="adults">Adults</label>
+            <input id="adults" name="adults" type="number" min="1" max="30" value="2">
+          </div>
+          <div>
+            <label class="field" for="children">Children under 16</label>
+            <input id="children" name="children" type="number" min="0" max="20" value="0">
+          </div>
+        </div>
+
+        <fieldset>
+          <legend>Destinations you’d like to visit</legend>
+          <div class="pick">
+            <label><input type="checkbox" name="dest" value="bwindi"><span>Bwindi</span></label>
+            <label><input type="checkbox" name="dest" value="queen-elizabeth"><span>Queen Elizabeth</span></label>
+            <label><input type="checkbox" name="dest" value="murchison"><span>Murchison Falls</span></label>
+            <label><input type="checkbox" name="dest" value="lake-mburo"><span>Lake Mburo</span></label>
+            <label><input type="checkbox" name="dest" value="bunyonyi"><span>Lake Bunyonyi</span></label>
+            <label><input type="checkbox" name="dest" value="kidepo"><span>Kidepo Valley</span></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Experiences</legend>
+          <div class="pick">
+            <label><input type="checkbox" name="exp" value="gorilla"><span>Gorilla trekking</span></label>
+            <label><input type="checkbox" name="exp" value="chimp"><span>Chimpanzee tracking</span></label>
+            <label><input type="checkbox" name="exp" value="boat"><span>Boat safaris</span></label>
+            <label><input type="checkbox" name="exp" value="hiking"><span>Hiking</span></label>
+            <label><input type="checkbox" name="exp" value="walks"><span>Nature walks</span></label>
+            <label><input type="checkbox" name="exp" value="birding"><span>Birding</span></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Lodge style</legend>
+          <div class="pick">
+            <label><input type="radio" name="style" value="budget"><span>Simple and comfortable</span></label>
+            <label><input type="radio" name="style" value="mid" checked><span>Mid-range</span></label>
+            <label><input type="radio" name="style" value="luxury"><span>Luxury lodges</span></label>
+          </div>
+        </fieldset>
+
+        <label class="field" for="notes">Anything else we should know?</label>
+        <textarea id="notes" name="notes" rows="4" placeholder="Celebrations, dietary needs, mobility, flights already booked…"></textarea>
+
+        <div class="form-actions">
+          <button class="btn btn-gold" type="submit">Send my enquiry</button>
+          <a class="btn btn-line" href="https://wa.me/256701377305" target="_blank" rel="noopener">Ask on WhatsApp instead</a>
+          <small>We only use your details to plan your trip.</small>
+        </div>
+      </form>
+
+      <div class="success" id="success" hidden tabindex="-1">
+        <div class="check" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12l5 5 9-10"/></svg></div>
+        <h3 id="successTitle">Enquiry sent</h3>
+        <p id="successText">A trip planner will reply within 24 hours.</p>
+        <button class="btn btn-line" id="newEnquiry" type="button">Start a new enquiry</button>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo logo-foot" href="#home">
+          <img src="logo/tirinyi-safaris-logo.png" alt="Tirinyi Safaris, back to top" width="180" height="88">
+        </a>
+        <p>Private safaris across the Pearl of Africa, planned in Kampala.</p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="#about">About us</a></li>
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#experiences">Experiences</a></li>
+          <li><a href="#journeys">Sample route</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Follow us</h3>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">TikTok</a></li>
+          <li><a href="#">TripAdvisor reviews</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="https://wa.me/256701377305" target="_blank" rel="noopener">+256 701 377 305</a></li>
+          <li><a href="mailto:isaaclgo150390@gmail.com">isaaclgo150390@gmail.com</a></li>
+          <li>Plot 00, Kampala Road, Kampala</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="year">2026</span> Tirinyi Safaris Ltd.</span>
+      <span>UTB licence no. pending. AUTO membership no. pending.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const scrollTo = el => el.scrollIntoView({behavior: reduceMotion ? 'auto' : 'smooth', block:'start'});
+
+  /* ---------- Uganda map (stylised) ---------- */
+  const P = ([lon,lat]) => `${((lon-29.4)*100).toFixed(1)},${((4.4-lat)*100).toFixed(1)}`;
+  const poly = pts => pts.map(P).join(' ');
+  const border = [[30.75,3.65],[31.05,3.8],[31.55,3.7],[31.9,3.58],[32.2,3.55],[32.45,3.75],[32.85,3.8],[33.2,3.75],[33.55,3.8],[33.95,4.2],[34.35,3.8],[34.45,3.3],[34.65,2.9],[34.9,2.5],[35.0,1.9],[34.75,1.4],[34.45,1.1],[34.1,0.8],[33.95,0.4],[34.05,0.15],[33.95,-1.0],[31.7,-1.0],[30.8,-1.0],[30.45,-1.07],[30.1,-1.35],[29.85,-1.42],[29.6,-1.35],[29.6,-0.9],[29.7,-0.4],[29.7,0.05],[29.95,0.5],[29.95,0.85],[30.25,1.2],[30.55,1.45],[31.0,1.85],[31.3,2.15],[31.2,2.3],[30.9,2.35],[30.75,2.45],[30.95,2.95],[30.85,3.25]];
+  const victoria = [[31.75,-1.0],[31.85,-0.4],[32.05,-0.05],[32.45,0.05],[32.9,0.25],[33.3,0.35],[33.6,0.25],[33.95,0.1],[33.95,-1.0]];
+  const albert = [[30.28,1.22],[30.6,1.45],[31.05,1.85],[31.32,2.12],[31.24,2.24],[30.95,1.98],[30.5,1.6],[30.25,1.32]];
+  const kyoga = [[32.6,1.5],[32.9,1.36],[33.2,1.44],[33.42,1.7],[33.1,1.64],[32.8,1.6]];
+  const george = [[30.1,0.06],[30.3,0.03],[30.3,-0.1],[30.12,-0.08]];
+  const edward = [[29.7,-0.15],[29.86,-0.1],[29.9,-0.35],[29.7,-0.45]];
+  const nile = [[33.2,0.43],[33.0,0.9],[32.9,1.38],[32.3,1.55],[32.0,1.9],[31.8,2.25],[31.45,2.2],[31.5,2.6],[31.6,3.2],[31.85,3.6]];
+  const pins = [
+    {id:'bwindi', name:'Bwindi', lon:29.7, lat:-1.0, dx:12, dy:-10},
+    {id:'bunyonyi', name:'Bunyonyi', lon:29.93, lat:-1.28, dx:13, dy:12},
+    {id:'queen-elizabeth', name:'Queen Elizabeth', lon:30.0, lat:-0.15, dx:14, dy:5},
+    {id:'lake-mburo', name:'Lake Mburo', lon:30.95, lat:-0.6, dx:14, dy:5},
+    {id:'murchison', name:'Murchison Falls', lon:31.8, lat:2.25, dx:14, dy:5},
+    {id:'kidepo', name:'Kidepo Valley', lon:33.75, lat:3.85, dx:-14, dy:22, anchor:'end'}
+  ];
+  const xy = (lon,lat) => [ (lon-29.4)*100, (4.4-lat)*100 ];
+  const [kx,ky] = xy(32.58,0.32), [ex,ey] = xy(32.46,0.05);
+  let svg = `<svg class="map" viewBox="0 0 580 610" role="group" aria-label="Stylised map of Uganda with our six destinations">
+    <polygon class="land" points="${poly(border)}"/>
+    <polygon class="water" points="${poly(victoria)}"/><polygon class="water" points="${poly(albert)}"/>
+    <polygon class="water" points="${poly(kyoga)}"/><polygon class="water" points="${poly(george)}"/><polygon class="water" points="${poly(edward)}"/>
+    <polyline class="river" points="${poly(nile)}"/>
+    <text class="small" x="${xy(32.7,-0.45)[0]}" y="${xy(32.7,-0.45)[1]}">Lake Victoria</text>
+    <rect class="city" x="${kx-5}" y="${ky-5}" width="10" height="10" transform="rotate(45 ${kx} ${ky})"/>
+    <text x="${kx+12}" y="${ky+2}">Kampala</text>
+    <circle class="city" cx="${ex}" cy="${ey}" r="3.5"/><text class="small" x="${ex+9}" y="${ey+16}">Entebbe airport</text>`;
+  pins.forEach(p => {
+    const [x,y] = xy(p.lon,p.lat);
+    svg += `<g class="pin" data-target="${p.id}" tabindex="0" role="button" aria-label="Show ${p.name}">
+      <circle class="halo" cx="${x}" cy="${y}" r="18"/><circle class="dot" cx="${x}" cy="${y}" r="8"/>
+      <text x="${x+p.dx}" y="${y+p.dy}" ${p.anchor?`text-anchor="${p.anchor}"`:''}>${p.name}</text></g>`;
+  });
+  svg += `<text class="small" x="560" y="600" text-anchor="end">Map not to scale</text></svg>`;
+  document.getElementById('mapHost').innerHTML = svg;
+
+  const setActive = id => {
+    document.querySelectorAll('.dest').forEach(d => d.classList.toggle('is-active', d.dataset.dest === id));
+    document.querySelectorAll('.pin').forEach(p => p.classList.toggle('is-active', p.dataset.target === id));
+  };
+  document.querySelectorAll('.pin').forEach(pin => {
+    const go = () => { const card = document.getElementById('d-' + pin.dataset.target); setActive(pin.dataset.target); card.scrollIntoView({behavior: reduceMotion?'auto':'smooth', block:'center'}); };
+    pin.addEventListener('click', go);
+    pin.addEventListener('keydown', e => { if(e.key==='Enter'||e.key===' '){ e.preventDefault(); go(); } });
+  });
+  document.querySelectorAll('.dest').forEach(d => {
+    d.addEventListener('mouseenter', () => setActive(d.dataset.dest));
+    d.addEventListener('focusin', () => setActive(d.dataset.dest));
+  });
+
+  /* ---------- Month selects ---------- */
+  const months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+  document.querySelectorAll('.month-select').forEach(sel => {
+    sel.innerHTML = `<option value="">Flexible</option>` + months.map(m=>`<option>${m}</option>`).join('');
+  });
+
+  /* ---------- Nav ---------- */
+  const menuBtn = document.getElementById('menuBtn'), navLinks = document.getElementById('navLinks');
+  menuBtn.addEventListener('click', () => { const open = navLinks.classList.toggle('open'); menuBtn.setAttribute('aria-expanded', open); menuBtn.textContent = open ? 'Close' : 'Menu'; });
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { navLinks.classList.remove('open'); menuBtn.setAttribute('aria-expanded', false); menuBtn.textContent = 'Menu'; }));
+  const links = [...navLinks.querySelectorAll('a')];
+  const navMap = {home:'home', about:'about', destinations:'destinations', experiences:'experiences', journeys:'experiences', gallery:'gallery', contact:'contact'};
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(en => { if(en.isIntersecting){ const key = navMap[en.target.id]; links.forEach(l => l.toggleAttribute('aria-current', l.getAttribute('href') === '#'+key)); links.forEach(l => { if(l.hasAttribute('aria-current')) l.setAttribute('aria-current','true'); }); } });
+  }, {rootMargin:'-45% 0px -50% 0px'});
+  Object.keys(navMap).forEach(id => { const s = document.getElementById(id); if(s) io.observe(s); });
+
+  /* ---------- Enquiry wiring ---------- */
+  const form = document.getElementById('enquiry');
+  const F = n => form.elements.namedItem(n);
+  const contact = document.getElementById('contact');
+  const box = (name,val) => form.querySelector(`input[name="${name}"][value="${val}"]`);
+  const check = (name,val,on=true) => { const b = box(name,val); if(b && b.checked !== on){ b.checked = on; b.dispatchEvent(new Event('change',{bubbles:true})); } };
+
+  const toggles = document.querySelectorAll('.toggle[data-exp]');
+  const syncToggle = val => { const on = box('exp',val).checked; document.querySelectorAll(`.toggle[data-exp="${val}"]`).forEach(t => { t.setAttribute('aria-pressed', on); t.textContent = on ? 'Added to my enquiry' : 'Add to my enquiry'; }); };
+  toggles.forEach(t => t.addEventListener('click', () => { const val = t.dataset.exp; check('exp', val, !box('exp',val).checked); }));
+  form.querySelectorAll('input[name="exp"]').forEach(b => b.addEventListener('change', () => syncToggle(b.value)));
+
+  document.querySelectorAll('[data-enquire]').forEach(b => b.addEventListener('click', () => { check('dest', b.dataset.enquire); scrollTo(contact); }));
+  document.querySelector('[data-journey]').addEventListener('click', () => {
+    ['lake-mburo','queen-elizabeth','bwindi','bunyonyi'].forEach(v => check('dest', v));
+    ['gorilla','chimp','boat'].forEach(v => check('exp', v));
+    F('length').value = '7 to 10 days';
+    const notes = F('notes'); if(!notes.value.includes('8-day')) notes.value = (notes.value ? notes.value + '\n' : '') + 'Interested in the 8-day first-timer’s route.';
+    scrollTo(contact);
+  });
+  document.getElementById('finderGo').addEventListener('click', () => {
+    const d = document.getElementById('fDest').value, e = document.getElementById('fExp').value;
+    if(d) check('dest', d); if(e) check('exp', e);
+    F('month').value = document.getElementById('fMonth').value;
+    F('adults').value = document.getElementById('fPeople').value;
+    scrollTo(contact);
+    setTimeout(() => F('name').focus({preventScroll:true}), reduceMotion ? 0 : 600);
+  });
+
+  /* ---------- Validation ---------- */
+  const setErr = (input,msg) => { const p = document.getElementById(input.id + '-err'); p.textContent = msg; input.setAttribute('aria-invalid', msg ? 'true' : 'false'); return !msg; };
+  const rules = {
+    name: v => v.trim().length < 2 ? 'Enter your full name.' : '',
+    email: v => /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v.trim()) ? '' : 'Enter an email like name@example.com.',
+    phone: v => v.replace(/\D/g,'').length < 7 ? 'Enter a WhatsApp number, including the country code.' : ''
+  };
+  Object.keys(rules).forEach(k => F(k).addEventListener('blur', () => { if(F(k).value) setErr(F(k), rules[k](F(k).value)); }));
+
+  const success = document.getElementById('success');
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    let firstBad = null;
+    Object.keys(rules).forEach(k => { if(!setErr(F(k), rules[k](F(k).value)) && !firstBad) firstBad = F(k); });
+    if(firstBad){ firstBad.focus(); return; }
+    const first = F('name').value.trim().split(' ')[0];
+    document.getElementById('successTitle').textContent = `Enquiry sent. Thank you, ${first}.`;
+    document.getElementById('successText').textContent = `A trip planner will reply on WhatsApp or at ${F('email').value.trim()} within 24 hours with a draft itinerary and price.`;
+    form.hidden = true; success.hidden = false; success.focus();
+  });
+  document.getElementById('newEnquiry').addEventListener('click', () => {
+    form.reset(); toggles.forEach(t => syncToggle(t.dataset.exp));
+    form.querySelectorAll('[aria-invalid]').forEach(i => i.setAttribute('aria-invalid','false'));
+    form.querySelectorAll('.err').forEach(p => p.textContent = '');
+    success.hidden = true; form.hidden = false; F('name').focus();
+  });
+
+  /* ---------- Gallery ---------- */
+  const photoSrc = f => 'photos/' + f;
+  const PHOTOS = [
+    {f:'gorilla-close-up.jpg', c:'A mountain gorilla peers through the leaves', t:['gorilla']},
+    {f:'gorilla-profile.jpg', c:'A silverback resting in the forest', t:['gorilla']},
+    {f:'chimp-by-tree.jpg', c:'A chimpanzee pauses against a mossy trunk', t:['chimp']},
+    {f:'chimp-looking-up.jpg', c:'Looking up into the canopy', t:['chimp']},
+    {f:'lion-and-safari-vehicle.jpg', c:'A lion rests while guests watch from the vehicle', t:['game']},
+    {f:'elephant-spraying-water.jpg', c:'An elephant cools off', t:['game']},
+    {f:'giraffe-crossing-track.jpg', c:'A giraffe crosses the park track', t:['game']},
+    {f:'giraffe-browsing.jpg', c:'A giraffe browsing on the open plains', t:['game']},
+    {f:'giraffes-dry-season.jpg', c:'Giraffes in dry-season bush', t:['game']},
+    {f:'zebras-grazing.jpg', c:'Zebras grazing in the evening light', t:['game']},
+    {f:'buffalo-in-grass.jpg', c:'A buffalo in the long grass', t:['game']},
+    {f:'hartebeest-with-birds.jpg', c:'A hartebeest with two passengers', t:['game','birding']},
+    {f:'murchison-falls-from-nile.jpg', c:'Murchison Falls from the Nile', t:['boat']},
+    {f:'elephants-in-water.jpg', c:'Elephants bathing at the water’s edge', t:['boat','game']},
+    {f:'hippos-by-riverbank.jpg', c:'Hippos below the riverbank', t:['boat']},
+    {f:'hippo-swimming.jpg', c:'A hippo keeps an eye on the boat', t:['boat']},
+    {f:'boat-pontoon-cruise.jpg', c:'Guests on a lake cruise', t:['boat']},
+    {f:'boat-lake-guest.jpg', c:'Heading out onto the lake', t:['boat']},
+    {f:'birding-group-forest-trail.jpg', c:'Birders and their guide on a forest track', t:['birding','walks']},
+    {f:'hiking-mountain-trail.jpg', c:'Hikers crossing high moorland', t:['hiking']},
+    {f:'nature-walk-forest-trail.jpg', c:'A guided walk on a misty forest trail', t:['walks']},
+    {f:'zipline-over-water.jpg', c:'Ziplining over the water', t:['adventure']}
+  ];
+  const CATS = [
+    {id:'all', label:'All photos'},
+    {id:'gorilla', label:'Gorilla trekking', exp:'gorilla'},
+    {id:'chimp', label:'Chimpanzee tracking', exp:'chimp'},
+    {id:'game', label:'Game drives'},
+    {id:'boat', label:'Boat safaris', exp:'boat'},
+    {id:'birding', label:'Birding', exp:'birding'},
+    {id:'walks', label:'Nature walks', exp:'walks', empty:'Ask about guided walks in Lake Mburo, Bigodi Wetland and Bwindi.'},
+    {id:'hiking', label:'Hiking', exp:'hiking', empty:'Ask about treks in the Rwenzori Mountains, Mount Elgon and Sipi Falls.'},
+    {id:'adventure', label:'Adventure'}
+  ];
+  const gFilters = document.getElementById('gFilters'), gGrid = document.getElementById('gGrid'), gEmpty = document.getElementById('gEmpty');
+  const lb = document.getElementById('lightbox'), lbImg = document.getElementById('lbImg');
+  let shown = [], current = 0, activeCat = CATS[0];
+
+  const count = id => id === 'all' ? PHOTOS.length : PHOTOS.filter(p => p.t.includes(id)).length;
+  gFilters.innerHTML = CATS.map(c => `<li><button type="button" data-cat="${c.id}" aria-pressed="${c.id==='all'}">${c.label}<span class="count">${count(c.id)}</span></button></li>`).join('');
+
+  const renderGallery = cat => {
+    activeCat = cat;
+    shown = cat.id === 'all' ? PHOTOS : PHOTOS.filter(p => p.t.includes(cat.id));
+    gFilters.querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed', b.dataset.cat === cat.id));
+    gGrid.innerHTML = shown.map((p,i) => `<button type="button" class="g-item" data-i="${i}"><img src="${photoSrc(p.f)}" alt="${p.c}" loading="lazy"><span>${p.c}</span></button>`).join('');
+    const empty = shown.length === 0;
+    gEmpty.hidden = !empty; gGrid.hidden = empty;
+    if(empty){
+      document.getElementById('gEmptyTitle').textContent = `${cat.label} photos are on the way`;
+      document.getElementById('gEmptyText').textContent = cat.empty || 'We’re adding more photos soon.';
+      document.getElementById('gEmptyBtn').textContent = `Ask about ${cat.label.toLowerCase()}`;
+    }
+  };
+  gFilters.addEventListener('click', e => { const b = e.target.closest('button'); if(b) renderGallery(CATS.find(c => c.id === b.dataset.cat)); });
+  document.getElementById('gEmptyBtn').addEventListener('click', () => { if(activeCat.exp) check('exp', activeCat.exp); scrollTo(contact); });
+
+  const showPhoto = i => {
+    current = (i + shown.length) % shown.length;
+    const p = shown[current];
+    lbImg.src = photoSrc(p.f); lbImg.alt = p.c;
+    document.getElementById('lbCaption').textContent = p.c;
+    document.getElementById('lbPos').textContent = `${current+1} of ${shown.length}`;
+  };
+  gGrid.addEventListener('click', e => { const b = e.target.closest('.g-item'); if(!b) return; showPhoto(Number(b.dataset.i)); lb.showModal(); });
+  document.getElementById('lbPrev').addEventListener('click', () => showPhoto(current-1));
+  document.getElementById('lbNext').addEventListener('click', () => showPhoto(current+1));
+  document.getElementById('lbClose').addEventListener('click', () => lb.close());
+  lb.addEventListener('click', e => { if(e.target === lb) lb.close(); });
+  lb.addEventListener('keydown', e => { if(e.key==='ArrowLeft') showPhoto(current-1); if(e.key==='ArrowRight') showPhoto(current+1); });
+  renderGallery(CATS[0]);
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
